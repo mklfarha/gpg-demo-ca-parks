@@ -1,0 +1,9 @@
+generator=skeema:1.8.1-community
+schema=ca_parks
+
+[production]
+flavor=mysql:5.7.32
+host=127.0.0.1
+socket=/tmp/mysql.sock
+user=root
+password=root

@@ -1,0 +1,29 @@
+
+type Feature { 
+    id: ID!
+    name: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    user_id: ID!   
+}
+
+input FeatureInput { 
+    id: ID
+    name: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    user_id: ID!
+}
+
+input FeaturePartialInput { 
+    
+    id: ID
+    
+    name: String
+    status: String
+    created_at: String
+    updated_at: String
+    user_id: ID
+}

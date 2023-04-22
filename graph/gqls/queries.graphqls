@@ -1,0 +1,125 @@
+type Query { 
+
+    #Park 
+    
+    ParkByID(id:ID): [Park]
+    
+    
+    ParkByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [Park]    
+    
+    
+    ParkByRecreationAreaID(recreation_area_id:ID!, limit:Int, offset:Int, orderBy:String, sort:String): [Park]    
+    
+    
+    ParkByRecreationAreaIDAndStatus(recreation_area_id:ID!,status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [Park]    
+    
+    
+    
+    # Search Park
+    SearchPark(query:String!, limit:Int, offset:Int): [Park]
+    
+
+    
+    
+    
+
+    #RecreationArea 
+    
+    RecreationAreaByID(id:ID): [RecreationArea]
+    
+    
+    RecreationAreaByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [RecreationArea]    
+    
+    
+    
+    # Search RecreationArea
+    SearchRecreationArea(query:String!, limit:Int, offset:Int): [RecreationArea]
+    
+
+    
+    
+    
+
+    #User 
+    
+    UserByID(id:ID): [User]
+    
+    
+    UserByEmail(email:String!, limit:Int, offset:Int, orderBy:String, sort:String): [User]    
+    
+    
+    UserByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [User]    
+    
+    
+    UserByEmailAndStatus(email:String!,status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [User]    
+    
+    
+    
+
+    
+    
+    
+
+    #Feature 
+    
+    FeatureByID(id:ID): [Feature]
+    
+    
+    FeatureByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [Feature]    
+    
+    
+    
+    # Search Feature
+    SearchFeature(query:String!, limit:Int, offset:Int): [Feature]
+    
+
+    
+    
+    
+
+    #ParkHasFeature 
+    
+    ParkHasFeatureByID(id:ID): [ParkHasFeature]
+    
+    
+    ParkHasFeatureByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [ParkHasFeature]    
+    
+    
+    ParkHasFeatureByParkID(park_id:ID!, limit:Int, offset:Int, orderBy:String, sort:String): [ParkHasFeature]    
+    
+    
+    ParkHasFeatureByParkIDAndStatus(park_id:ID!,status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [ParkHasFeature]    
+    
+    
+    ParkHasFeatureByFeatureID(feature_id:ID!, limit:Int, offset:Int, orderBy:String, sort:String): [ParkHasFeature]    
+    
+    
+    ParkHasFeatureByFeatureIDAndStatus(feature_id:ID!,status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [ParkHasFeature]    
+    
+    
+    
+
+    
+    
+    
+
+    #Event 
+    
+    EventByID(id:ID): [Event]
+    
+    
+    EventByStatus(status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [Event]    
+    
+    
+    EventByParkID(park_id:ID!, limit:Int, offset:Int, orderBy:String, sort:String): [Event]    
+    
+    
+    EventByParkIDAndStatus(park_id:ID!,status:String!, limit:Int, offset:Int, orderBy:String, sort:String): [Event]    
+    
+    
+    
+
+    
+    
+        
+}

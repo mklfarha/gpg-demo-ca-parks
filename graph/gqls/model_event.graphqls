@@ -1,0 +1,44 @@
+
+type Event { 
+    id: ID!
+    name: String!
+    description: String
+    main_image: String!
+    start_date: String!
+    end_date: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    park_id: ID!
+    user_id: ID!   
+}
+
+input EventInput { 
+    id: ID
+    name: String!
+    description: String
+    main_image: String!
+    start_date: String!
+    end_date: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    park_id: ID!
+    user_id: ID!
+}
+
+input EventPartialInput { 
+    
+    id: ID
+    
+    name: String
+    description: String
+    main_image: String
+    start_date: String
+    end_date: String
+    status: String
+    created_at: String
+    updated_at: String
+    park_id: ID
+    user_id: ID
+}

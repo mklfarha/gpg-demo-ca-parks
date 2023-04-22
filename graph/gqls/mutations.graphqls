@@ -1,0 +1,14 @@
+type Mutation { 
+    upsertPark(input: ParkInput!): Park   
+    upsertPartialPark(input: ParkPartialInput!): Park
+    upsertRecreationArea(input: RecreationAreaInput!): RecreationArea   
+    upsertPartialRecreationArea(input: RecreationAreaPartialInput!): RecreationArea
+    upsertUser(input: UserInput!): User   
+    upsertPartialUser(input: UserPartialInput!): User
+    upsertFeature(input: FeatureInput!): Feature   
+    upsertPartialFeature(input: FeaturePartialInput!): Feature
+    upsertParkHasFeature(input: ParkHasFeatureInput!): ParkHasFeature   
+    upsertPartialParkHasFeature(input: ParkHasFeaturePartialInput!): ParkHasFeature
+    upsertEvent(input: EventInput!): Event   
+    upsertPartialEvent(input: EventPartialInput!): Event    
+}

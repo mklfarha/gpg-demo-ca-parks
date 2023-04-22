@@ -1,0 +1,32 @@
+
+type ParkHasFeature { 
+    id: ID!
+    details: String
+    status: String!
+    created_at: String
+    updated_at: String
+    park_id: ID!
+    feature_id: ID!   
+}
+
+input ParkHasFeatureInput { 
+    id: ID
+    details: String
+    status: String!
+    created_at: String
+    updated_at: String
+    park_id: ID!
+    feature_id: ID!
+}
+
+input ParkHasFeaturePartialInput { 
+    
+    id: ID
+    
+    details: String
+    status: String
+    created_at: String
+    updated_at: String
+    park_id: ID
+    feature_id: ID
+}

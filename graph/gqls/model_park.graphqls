@@ -1,0 +1,47 @@
+
+type Park { 
+    id: ID!
+    name: String!
+    main_image: String!
+    phone: String
+    hours: String
+    allows_dogs: Boolean!
+    links: [ParkLinks]
+    status: String!
+    created_at: String
+    updated_at: String
+    recreation_area_id: ID!
+    user_id: ID!   
+}
+
+input ParkInput { 
+    id: ID
+    name: String!
+    main_image: String!
+    phone: String
+    hours: String
+    allows_dogs: Boolean!
+    links: [ParkLinksInput]
+    status: String!
+    created_at: String
+    updated_at: String
+    recreation_area_id: ID!
+    user_id: ID!
+}
+
+input ParkPartialInput { 
+    
+    id: ID
+    
+    name: String
+    main_image: String
+    phone: String
+    hours: String
+    allows_dogs: Boolean
+    links: [ParkLinksInput]
+    status: String
+    created_at: String
+    updated_at: String
+    recreation_area_id: ID
+    user_id: ID
+}

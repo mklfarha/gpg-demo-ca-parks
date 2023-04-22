@@ -1,0 +1,29 @@
+
+type RecreationArea { 
+    id: ID!
+    name: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    user_id: ID!   
+}
+
+input RecreationAreaInput { 
+    id: ID
+    name: String!
+    status: String!
+    created_at: String
+    updated_at: String
+    user_id: ID!
+}
+
+input RecreationAreaPartialInput { 
+    
+    id: ID
+    
+    name: String
+    status: String
+    created_at: String
+    updated_at: String
+    user_id: ID
+}

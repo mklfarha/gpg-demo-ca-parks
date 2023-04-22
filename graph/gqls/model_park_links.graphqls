@@ -1,0 +1,15 @@
+
+type ParkLinks { 
+    type: String!
+    link: String!   
+}
+
+input ParkLinksInput { 
+    type: String!
+    link: String!
+}
+
+input ParkLinksPartialInput { 
+    type: String
+    link: String
+}

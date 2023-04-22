@@ -1,0 +1,32 @@
+
+type User { 
+    id: ID!
+    name: String!
+    email: String!
+    password: String!
+    status: String!
+    created_at: String
+    updated_at: String   
+}
+
+input UserInput { 
+    id: ID
+    name: String!
+    email: String!
+    password: String!
+    status: String!
+    created_at: String
+    updated_at: String
+}
+
+input UserPartialInput { 
+    
+    id: ID
+    
+    name: String
+    email: String
+    password: String
+    status: String
+    created_at: String
+    updated_at: String
+}
